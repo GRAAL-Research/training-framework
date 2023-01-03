@@ -1,0 +1,8 @@
+mode: MULTIRUN
+sweeper:
+  params:
+    logger.experiment_name: Plateau
+    logger.run_name: "${model._target_}"
+
+    scheduler.factor: range(2, 4, step=0.2)
+    scheduler.patience: range(1, 7, step=1)

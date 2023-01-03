@@ -1,0 +1,5 @@
+_target_: model.CNN
+n_conv: 1
+
+_partial_: True
+_recursive_: False

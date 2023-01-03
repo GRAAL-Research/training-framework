@@ -1,0 +1,5 @@
+_target_: callback.CBoundLogger
+n_estimators: [5]
+noise_intensities: [0.01]
+
+_recursive_: False

@@ -1,0 +1,7 @@
+mode: MULTIRUN
+sweeper:
+  params:
+    logger.experiment_name: Loss
+    logger.run_name: "${model._target_}"
+
+    loss: multi_margin_p2, multi_margin_p1, cross_entropy, linear

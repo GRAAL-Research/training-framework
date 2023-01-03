@@ -1,0 +1,3 @@
+_target_: torch.nn.init.xavier_uniform_
+
+_partial_: true

@@ -1,0 +1,4 @@
+_target_: callback.EarlyStopping
+val_acc_min_delta: 0.01
+val_acc_patience: 5
+train_acc_stopping_threshold: 0.9999

@@ -1,0 +1,9 @@
+_target_: data_module.Mnist2Digits
+data_path: data
+batch_size: 256
+valid_pct: 0.2
+low_digit: 1
+high_digit: 7
+
+_partial_: True
+_recursive_: False

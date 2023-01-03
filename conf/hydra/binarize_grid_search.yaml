@@ -1,0 +1,14 @@
+mode: MULTIRUN
+sweeper:
+  params:
+    logger.experiment_name: binarize linear
+    logger.run_name: "${model._target_}"
+
+    model: cnn
+
+    callback.is_binarizing_weights: True
+    callback.binary_weight.is_stochastic: True, False
+    callback.binary_weight.is_on_linear_layer: True
+    callback.binary_weight.is_on_conv_layer: False
+
+    callback.c_bound_logger.noise_intensities: 0.001

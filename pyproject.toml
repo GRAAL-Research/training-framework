@@ -1,0 +1,37 @@
+[tool.isort]
+line_length = 80
+profile = 'black'
+
+[tool.black]
+line-length = 80
+exclude = '''
+/(
+    .git
+  | .mypy_cache
+  | venv/*
+  | __pycache__
+  | logs/*
+  | data/*
+)/
+'''
+
+[tool.pylint]
+    [tool.pylint.messages_control]
+    disable = [
+        "missing-class-docstring",
+        "missing-module-docstring",
+        "missing-function-docstring",
+        "unused-argument"]
+
+    [tool.pylint.reports]
+    output-format = "colorized"
+
+    [tool.pylint.format]
+    max-line-length = 80
+
+    [tool.pylint.design]
+    max-args = 7
+
+    [tool.pylint.typecheck]
+    generated-members = "torch.*"
+

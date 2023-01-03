@@ -1,0 +1,5 @@
+_target_: pytorch_lightning.loggers.MLFlowLogger
+tracking_uri: file:./mlruns
+experiment_name: Default
+run_name: "${model._target_}"
+tags: Null

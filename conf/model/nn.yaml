@@ -1,0 +1,10 @@
+_target_: model.NeuralNetwork
+n_input_neuron: 784
+n_hidden_neuron: 10
+n_hidden_layer: 2
+is_batch_norm: True
+hidden_layer_activation:
+  _target_: torch.nn.ReLU
+
+_partial_: True
+_recursive_: False

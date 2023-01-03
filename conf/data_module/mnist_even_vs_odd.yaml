@@ -1,0 +1,7 @@
+_target_: data_module.MnistEvenVsOdd
+data_path: data
+batch_size: 256
+valid_pct: 0.2
+
+_partial_: True
+_recursive_: False

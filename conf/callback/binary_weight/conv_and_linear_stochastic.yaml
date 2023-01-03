@@ -1,0 +1,6 @@
+_target_: callback.BinaryWeight
+is_stochastic: True
+is_on_linear_layer: True
+is_on_conv_layer: True
+
+_recursive_: False

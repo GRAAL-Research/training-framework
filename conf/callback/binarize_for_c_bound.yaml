@@ -1,0 +1,17 @@
+is_accuracy_logged: True
+is_hyperparams_logged: True
+is_loss_logged: True
+is_model_logged: True
+
+is_binarizing_weights: True
+is_c_bound_logged: True
+is_early_stopping_present: True
+is_scheduler_present: True
+is_weight_initializer_present: True
+
+defaults:
+  - binary_weight: conv_and_linear_stochastic
+  - c_bound_logger: default
+  - early_stopping: patience_5
+  - scheduler: plateau
+  - weight_initializer: kaiming_uniform

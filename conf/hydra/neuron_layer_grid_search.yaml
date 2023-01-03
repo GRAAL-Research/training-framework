@@ -1,0 +1,10 @@
+mode: MULTIRUN
+sweeper:
+  params:
+    logger.experiment_name: Neuron + Layer
+    logger.run_name: "${model._target_}"
+
+    model.n_hidden_neuron: 5, 10, 25, 50, 100, 250, 500
+    model.n_hidden_layer: range(0, 6, step=1)
+    callback.c_bound_logger.n_estimator: 20
+    callback.c_bound_logger.noise_intensities: 1

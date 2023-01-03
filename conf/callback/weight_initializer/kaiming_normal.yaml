@@ -1,0 +1,4 @@
+_target_: torch.nn.init.kaiming_normal_
+nonlinearity: relu
+
+_partial_: true
